@@ -1,5 +1,7 @@
 # Antd-Admin-Template
 
+github 地址: [AntdAdminTemplate](https://github.com/mrleidesen/antd-admin-template)
+
 已经集成如下：
 
 - vite3
