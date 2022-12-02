@@ -1,5 +1,7 @@
 const HomeView: React.FC = () => {
-  return <h1 className="text-blue-500 font-bold text-2xl">Home page</h1>;
+  return (
+    <div className="text-blue-500 font-bold text-2xl h-[1500px]">Home page</div>
+  );
 };
 
 export default HomeView;

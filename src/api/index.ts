@@ -1,5 +1,7 @@
 import type { TUser } from '@/types';
 
+import { getToken } from '@/utils';
+
 import { request } from '@/utils/request';
 
 /**
@@ -10,5 +12,26 @@ import { request } from '@/utils/request';
 export function getUser() {
   return request<TUser>({
     url: '/user',
+  });
+}
+
+export function mockFetchUserInfo() {
+  return new Promise<TUser>((resolve, reject) => {
+    setTimeout(() => {
+      const token = getToken();
+
+      if (token) {
+        const user: TUser = {
+          id: 1,
+          name: '卷仔',
+        };
+        resolve(user);
+      } else {
+        reject({
+          status: 401,
+          msg: '暂未登录',
+        });
+      }
+    }, 100);
   });
 }
