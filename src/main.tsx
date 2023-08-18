@@ -1,6 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import 'virtual:windi.css';
+import 'virtual:uno.css';
+import '@unocss/reset/tailwind-compat.css';
 
 import './assets/index.css';
 import App from './App';
