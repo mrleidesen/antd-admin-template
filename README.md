@@ -4,8 +4,8 @@ github 地址: [AntdAdminTemplate](https://github.com/mrleidesen/antd-admin-temp
 
 已经集成如下：
 
-- vite3
-- windi css
+- vite4
+- unocss
 - eslint
 - prettier
 - react-query v4
